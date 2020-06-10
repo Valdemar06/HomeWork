@@ -1,12 +1,12 @@
 public class MyCollection {
     private Object[] collection;
+    private int size = 0;
 
-    public MyCollection(Object[] collection, int length) {
+    public MyCollection(Object[] collection) {
         this.collection = copy(collection);
-        fill(length);
     }
 
-    public int size() { return collection.length; }
+    public int size() { return size; }
 
     public boolean isEmpty() {
         boolean result = true;
@@ -18,8 +18,14 @@ public class MyCollection {
         return result;
     }
 
-    public Object[] addObject(Object object, int index) {
-        collection[index] = object;
+    public Object[] addObject(Object object) {
+        Object [] newArray = new Object[collection.length+1];
+        for (int i = 0; i <collection.length ; i++) {
+            newArray[i] = collection[i];
+        }
+        newArray[collection.length] = object;
+        collection = newArray;
+        size++;
         return collection;
     }
 
@@ -57,11 +63,17 @@ public class MyCollection {
     }
 
     public void remove(Object object) {
+        Object[] newArray = new Object[collection.length];
         for (int i = 0; i < collection.length; i++) {
             if (collection[i].equals(object)) {
                 collection[i] = null;
             }
+            else{
+                newArray[i] = collection[i];
+            }
         }
+        collection = newArray;
+        size--;
     }
 
     public Object[] addAllArray(Object[] arrayOutside) {
@@ -125,6 +137,9 @@ public class MyCollection {
         StringBuilder builder = new StringBuilder();
         builder.append('[');
         for (int i = 0; ; i++) {
+            if(collection[i] == null){
+                collection[i] = "";
+            }
             builder.append(collection[i]);
             if (i == iMax) {
                 return builder.append(']').toString();

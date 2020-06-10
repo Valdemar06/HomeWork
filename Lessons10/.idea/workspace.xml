@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="398d2cc9-c408-4303-8365-5734395e9619" name="Default Changelist" comment="" />
+    <list default="true" id="398d2cc9-c408-4303-8365-5734395e9619" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Lessons1-2/Average.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lessons1-2/BankInterest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lessons1-2/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lessons1-2/EvenOrNot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lessons1-2/Stars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +21,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1cjOB1GcBOgg7dKwosVWwQSoH6r" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,7 +33,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lessons7" />
   </component>
   <component name="RunManager">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -68,10 +79,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="429" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1591176848607" />
-    <state x="301" y="275" key="FileChooserDialogImpl" timestamp="1591373750668">
+    <state x="301" y="275" key="FileChooserDialogImpl" timestamp="1591807391013">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="301" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591373750668" />
+    <state x="301" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591807391013" />
     <state width="1099" height="260" key="GridCell.Tab.0.bottom" timestamp="1591446773119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -104,10 +115,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591212624401" />
-    <state x="319" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1591445932552">
+    <state x="319" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1591807377207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="319" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591445932552" />
+    <state x="319" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591807377207" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
