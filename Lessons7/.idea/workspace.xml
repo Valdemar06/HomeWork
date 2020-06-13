@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61a36f42-88dd-449a-8698-26779154439a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lessons1-2/Average.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lessons1-2/BankInterest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lessons1-2/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lessons1-2/EvenOrNot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lessons1-2/Stars.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lessons10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lessons10/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lessons12/Lessons12.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lessons8/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lessons7/MyCollection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lessons7/MyCollection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lessons7/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lessons7/Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyCollection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Work" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lessons8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lessons8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lessons8/out/production/Lessons8/MyCollection$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lessons8/out/production/Lessons8/MyCollection$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lessons8/out/production/Lessons8/MyCollection.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lessons8/out/production/Lessons8/MyCollection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lessons8/out/production/Lessons8/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lessons8/out/production/Lessons8/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lessons8/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lessons8/src/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,22 +80,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1099" height="284" key="GridCell.Tab.0.bottom" timestamp="1591808373659">
+    <state x="1134" y="279" key="FileChooserDialogImpl" timestamp="1591944488369">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1099" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591808373659" />
-    <state width="1099" height="284" key="GridCell.Tab.0.center" timestamp="1591808373659">
+    <state x="1134" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591944488369" />
+    <state width="1099" height="281" key="GridCell.Tab.0.bottom" timestamp="1592050408082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1099" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591808373659" />
-    <state width="1099" height="284" key="GridCell.Tab.0.left" timestamp="1591808373659">
+    <state width="1099" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592050408082" />
+    <state width="1099" height="281" key="GridCell.Tab.0.center" timestamp="1592050408082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1099" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591808373659" />
-    <state width="1099" height="284" key="GridCell.Tab.0.right" timestamp="1591808373659">
+    <state width="1099" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592050408082" />
+    <state width="1099" height="281" key="GridCell.Tab.0.left" timestamp="1592050408082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1099" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591808373659" />
+    <state width="1099" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592050408082" />
+    <state width="1099" height="281" key="GridCell.Tab.0.right" timestamp="1592050408082">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1099" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592050408082" />
     <state width="1067" height="347" key="GridCell.Tab.1.bottom" timestamp="1590595759026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -115,18 +116,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1067" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590595759025" />
-    <state x="854" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1590762420529">
+    <state x="854" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1591944465091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="854" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590762420529" />
+    <state x="854" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591944465091" />
     <state x="1065" y="220" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1590574568794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1065" y="220" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590574568794" />
-    <state x="566" y="141" key="new project wizard" timestamp="1590762437174">
+    <state x="566" y="141" key="new project wizard" timestamp="1591944504308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="566" y="141" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1590762437174" />
+    <state x="566" y="141" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1591944504308" />
     <state x="1065" y="152" key="refactoring.ChangeSignatureDialog" timestamp="1590577199176">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

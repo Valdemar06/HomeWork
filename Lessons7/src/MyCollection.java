@@ -1,10 +1,8 @@
 public class MyCollection {
-    private Object[] collection;
+    private Object[] collection = {};
     private int size = 0;
 
-    public MyCollection(Object[] collection) {
-        this.collection = copy(collection);
-    }
+    public MyCollection() { }
 
     public int size() { return size; }
 

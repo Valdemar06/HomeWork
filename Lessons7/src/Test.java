@@ -4,8 +4,8 @@ public class Test {
         Object [] newArray2 = new Object[1];
         String object = "One";
         String  object2 = "TWo";
-        MyCollection myCollection = new MyCollection(newArray);
-        MyCollection collection = new MyCollection(newArray2);
+        MyCollection myCollection = new MyCollection();
+        MyCollection collection = new MyCollection();
         myCollection.addObject(object);
         collection.addObject(object2);
         /*collection.addAllArray(myCollection.getArray());

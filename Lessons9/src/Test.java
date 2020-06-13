@@ -8,7 +8,7 @@ public class Test {
         }
         HomeWork work = new HomeWork();
         System.out.println(Arrays.toString(array));
-        System.out.println(work.binarySearch(array, 279));
-        System.out.println(work.fibonacci(44));
+        System.out.println(work.binarySearch(array, 22));
+        System.out.println(work.fibonacci(8));
     }
 }

@@ -1,4 +1,3 @@
-import java.util.Iterator;
 import java.util.LinkedList;
 
 public class Test {
@@ -8,16 +7,19 @@ public class Test {
         collection.add("Two");
         String string ="One";
         myCollection.add(string);
-        myCollection.add("two");
+        myCollection.add("Two");
         myCollection.add("Three");
-        System.out.println(myCollection.contains(string));
+       /* System.out.println(myCollection.contains(string));
         System.out.println(myCollection.isEmpty());
         System.out.println(myCollection.containsAll(collection));
-        System.out.println(myCollection.size());
-
-        Iterator iterator = myCollection.iterator();
+        System.out.println(myCollection.size());*/
+       myCollection.addAll(collection);
+        System.out.println(myCollection.print());
+        myCollection.retainAll(collection);
+        System.out.println(myCollection.print());
+       /* Iterator iterator = myCollection.iterator();
           while(iterator.hasNext()){
             System.out.println(iterator.next());
-        }
+        }*/
     }
 }
