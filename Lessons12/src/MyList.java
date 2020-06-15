@@ -162,9 +162,16 @@ public class MyList implements List {
 
     @Override
     public List subList(int fromIndex, int toIndex) {
-        return null;
+        MyList newList = new MyList();
+        if(toIndex > size()){
+            System.out.println("Out of bounds of array");
+            System.exit(0);
+        }
+        for (int i = fromIndex; i <toIndex ; i++) {
+            newList.add(myList[i]);
+        }
+        return newList;
     }
-
     @Override
     public boolean retainAll(Collection c) {
         Object[] newArray = c.toArray();
@@ -213,9 +220,7 @@ public class MyList implements List {
     }
 
     @Override
-    public Object[] toArray(Object[] a) {
-        return a;
-    }
+    public Object[] toArray(Object[] a) { return a; }
 
     @Override
     public String toString() {
