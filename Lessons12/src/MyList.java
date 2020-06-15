@@ -155,7 +155,6 @@ public class MyList implements List {
     public ListIterator listIterator(int index) {
         if(index >= size()){
             System.out.println("Out of bounds of array");
-            System.exit(0);
         }
         return new ListIter(index);
     }
@@ -163,9 +162,10 @@ public class MyList implements List {
     @Override
     public List subList(int fromIndex, int toIndex) {
         MyList newList = new MyList();
+        MyList nullList = new MyList();
         if(toIndex > size()){
             System.out.println("Out of bounds of array");
-            System.exit(0);
+            return nullList;
         }
         for (int i = fromIndex; i <toIndex ; i++) {
             newList.add(myList[i]);
@@ -224,11 +224,15 @@ public class MyList implements List {
 
     @Override
     public String toString() {
+        if(size() == 0){
+            return "[]";
+        }
         return "MyList{" +
                 "myList=" + Arrays.toString(myList) +
                 " size= "+ myList.length+
                 '}';
     }
+
     private class ListIter implements ListIterator{
         int index;
         int previous = myList.length-1;

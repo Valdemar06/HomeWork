@@ -30,5 +30,6 @@ public class Test {
           System.out.println(listIterator.next());
       }*/
         System.out.println(myList.subList(0,7));
+        System.out.println("List");
     }
 }
