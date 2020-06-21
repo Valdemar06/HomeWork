@@ -32,7 +32,6 @@ public class BinaryTree implements Set {
     public Iterator iterator() {
         return new Iterator() {
             Node node = root;
-            Node parent = root;
             @Override
             public boolean hasNext() {
                 return node!=null;
@@ -40,6 +39,7 @@ public class BinaryTree implements Set {
             @Override
             public Object next() {
                 Node temp = node;
+                node = node.right;
                 return temp.data;
             }
         };
@@ -52,7 +52,7 @@ public class BinaryTree implements Set {
             traverseInOrder(node.right);
         }
     }
-    
+
     @Override
     public Object[] toArray() {
         int index = 0;
