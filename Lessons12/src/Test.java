@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ListIterator;
 
 public class Test {
     public static void main(String[] args) {
@@ -25,7 +26,7 @@ public class Test {
          while(iterator.hasNext()){
             System.out.println(iterator.next());
         }*/
-     /*   ListIterator listIterator = myList.listIterator(3);
+       /* ListIterator listIterator = myList.listIterator(0);
         while (listIterator.hasNext()) {
           System.out.println(listIterator.next());
       }*/
