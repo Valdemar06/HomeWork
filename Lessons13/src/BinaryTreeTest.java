@@ -17,9 +17,7 @@ public class BinaryTreeTest {
     }
 
     @Test
-    public void isEmpty() {
-        Assert.assertEquals(0,binaryTree.size());
-    }
+    public void isEmpty() { Assert.assertTrue(binaryTree.isEmpty()); }
 
     @Test
     public void contains() {
@@ -46,7 +44,6 @@ public class BinaryTreeTest {
         binaryTree.add(-1);
         binaryTree.add(-2);
         Assert.assertEquals(4,binaryTree.size());
-        System.out.println(binaryTree);
     }
 
     @Test
@@ -54,7 +51,6 @@ public class BinaryTreeTest {
         binaryTree.add(1);
         binaryTree.remove(1);
         Assert.assertEquals(0,binaryTree.size());
-        System.out.println(binaryTree);
     }
 
     @Test
@@ -66,7 +62,6 @@ public class BinaryTreeTest {
         list.add(5);
         list.add(-8);
         binaryTree.addAll(list);
-        System.out.println(binaryTree);
         Assert.assertEquals(5,binaryTree.size());
 
     }
@@ -90,10 +85,8 @@ public class BinaryTreeTest {
         list.add(-8);
         list.add(6);
         binaryTree.addAll(list);
-        System.out.println(binaryTree);
         Assert.assertEquals(6, binaryTree.size());
         binaryTree.removeAll(list);
-        System.out.println(binaryTree);
         Assert.assertEquals(3, binaryTree.size());
     }
 
@@ -104,7 +97,7 @@ public class BinaryTreeTest {
         binaryTree.add(3);
         List list = new ArrayList();
         list.add(4);
-        list.add(-5);
+        list.add(5);
         list.add(6);
         binaryTree.addAll(list);
         binaryTree.retainAll(list);
@@ -121,7 +114,6 @@ public class BinaryTreeTest {
         list.add(-5);
         list.add(6);
         binaryTree.addAll(list);
-        System.out.println(binaryTree.containsAll(list));
         Assert.assertTrue(binaryTree.containsAll(list));
     }
 
