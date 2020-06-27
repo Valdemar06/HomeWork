@@ -21,10 +21,10 @@ public class BinaryTree implements Set {
     }
     private boolean containsIn(int value, Node node){
         if(node == null){ return false; }
-        if(node.data == 1){
-            return true;
-        }else if(node.data > value){ return containsIn(value, node.left);
-        }else{ return containsIn(value, node.right); }
+        if(node.data == value){ return true; }
+        return value < node.data
+                ? containsIn(value, node.left)
+                : containsIn(value, node.right);
     }
 
     @Override
@@ -41,21 +41,27 @@ public class BinaryTree implements Set {
     }
     @Override
     public Object[] toArray() {
-        int index = 0;
-        Object [] newArray = new Object[size];
-        for (Node x = root.left; x!= null; x= x.left){
-            newArray[index++] = x;
+        List result = treeList(root);
+        return  result.toArray();
+    }
+
+    private List treeList(Node node){
+        List result = new ArrayList();
+        if(node==null) return result;
+        if(node.left != null){
+            result.addAll(treeList(node.left));
         }
-        for (Node x = root.right; x!= null; x= x.right){
-            newArray[index++] = x;
+        if (node.right!=null){
+            result.addAll(treeList(node.right));
         }
-        return newArray;
+        return result;
     }
 
     @Override
     public boolean add(Object o) {
         Integer add = (Integer)o;
         Node newNode = new Node(add);
+        if(contains(add) == true) return false;
         if(root == null){
             root = newNode;
         }else{

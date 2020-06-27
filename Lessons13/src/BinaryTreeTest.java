@@ -21,10 +21,12 @@ public class BinaryTreeTest {
 
     @Test
     public void contains() {
-        binaryTree.add(1);
-        binaryTree.contains(1);
-        Assert.assertTrue(true);
-        System.out.println(binaryTree);
+        binaryTree.add(4);
+        binaryTree.add(6);
+        Assert.assertTrue(binaryTree.contains(4));
+        Assert.assertTrue(binaryTree.contains(6));
+
+        Assert.assertFalse(binaryTree.contains(2));
     }
 
     @Test
