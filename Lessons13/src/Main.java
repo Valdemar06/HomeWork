@@ -12,12 +12,13 @@ public class Main {
         binaryTree.add(1);
         binaryTree.add(1);
         binaryTree.add(1);
+        System.out.println(Arrays.toString(binaryTree.toArray()));
 
         System.out.println(binaryTree);
         System.out.println(binaryTree.size());
-        Iterator iterator = binaryTree.iterator();
+       /* Iterator iterator = binaryTree.iterator();
         while(iterator.hasNext()){
            System.out.println(iterator.next());
-        }
+        }*/
     }
 }

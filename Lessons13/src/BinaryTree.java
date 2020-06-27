@@ -41,20 +41,26 @@ public class BinaryTree implements Set {
     }
     @Override
     public Object[] toArray() {
-        List result = treeList(root);
-        return  result.toArray();
+        return toArray(root);
     }
-
-    private List treeList(Node node){
+    private Object [] toArray(Node node){
         List result = new ArrayList();
-        if(node==null) return result;
-        if(node.left != null){
-            result.addAll(treeList(node.left));
+        if (node.left!= null){
+            Object [] temp = toArray(node.left);
+            for (int i = 0; i <temp.length ; i++) {
+                Comparable object = (Comparable) temp[i];
+                result.add(object);
+            }
         }
-        if (node.right!=null){
-            result.addAll(treeList(node.right));
+        result.add(node.data);
+        if(node.right != null){
+            Object [] temp = toArray(node.right);
+            for (int i = 0; i <temp.length ; i++) {
+                Comparable object = (Comparable) temp[i];
+                result.add(object);
+            }
         }
-        return result;
+        return  result.toArray();
     }
 
     @Override
