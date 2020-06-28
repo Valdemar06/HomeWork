@@ -200,16 +200,14 @@ public class BinaryTree implements Set {
 
     @Override
     public boolean containsAll(Collection c) {
+        List list = new ArrayList();
         for (Object object : c) {
-            for (Node x = root.right; x!= null; x = x.right)
-            if(object.equals(x.data)){
-                return true;
+            if(contains(object)){
+                list.add(object);
             }
-            for (Node x = root.left; x!= null; x = x.left){
-                if(object.equals(x.data)){
-                    return true;
-                }
-            }
+        }
+        if(list.equals(c)){
+            return true;
         }
         return false;
     }
