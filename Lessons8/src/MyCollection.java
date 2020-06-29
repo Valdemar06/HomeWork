@@ -2,7 +2,7 @@ import java.util.Collection;
 import java.util.Iterator;
 
 public class MyCollection implements Collection {
-    Object[] collection = new Object[0];
+    private Object[] collection = new Object[0];
 
     @Override
     public int size() {
