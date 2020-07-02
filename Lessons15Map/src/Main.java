@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         MyMap mymap = new MyMap();
         Map map = new HashMap();
-        mymap.put("32", "one");
+        mymap.put("272", "one");
         System.out.println(mymap);
     }
 }

@@ -171,7 +171,7 @@ public class MyMap implements Map {
         String result = " ";
         for (int i = 0; i <data.length ; i++) {
             for (Entry entry = data[i]; entry!=null; entry = entry.next){
-                System.out.println(entry.getKey() + " = " + entry.getValue());
+                System.out.println("Key = "+entry.getKey() + " : "+ "Value = "+ entry.getValue());
             }
         }
         return result;
