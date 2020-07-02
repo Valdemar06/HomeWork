@@ -163,7 +163,7 @@ public class MyMap implements Map {
         if(key == null){
             return 0;
         }
-        return Math.abs(key.hashCode()&capacity);
+        return Math.abs(key.hashCode()/capacity);
     }
 
     @Override
