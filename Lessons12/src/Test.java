@@ -29,7 +29,10 @@ public class Test {
         ListIterator listIterator = myList.listIterator(9);
         while (listIterator.hasNext()) {
           System.out.println(listIterator.next());
-      }
-        System.out.println(myList.subList(0,9));
+        }try{
+            myList.subList(0,9);
+        }catch (RuntimeException exception){
+            System.out.println("Out bond exception");
+        }
     }
 }
