@@ -154,7 +154,7 @@ public class MyList implements List {
     @Override
     public ListIterator listIterator(int index) {
         if(index >= size()){
-            System.out.println("Out of bounds of array");
+           throw new RuntimeException("Out bond of exception");
         }
         return new ListIter(index);
     }
@@ -162,10 +162,8 @@ public class MyList implements List {
     @Override
     public List subList(int fromIndex, int toIndex) {
         MyList newList = new MyList();
-        MyList nullList = new MyList();
         if(toIndex > size()){
-            System.out.println("Out of bounds of array");
-            return nullList;
+            throw new RuntimeException("Out bond of exception");
         }
         for (int i = fromIndex; i <toIndex ; i++) {
             newList.add(myList[i]);

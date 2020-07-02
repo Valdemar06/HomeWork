@@ -26,11 +26,10 @@ public class Test {
          while(iterator.hasNext()){
             System.out.println(iterator.next());
         }*/
-       /* ListIterator listIterator = myList.listIterator(0);
+        ListIterator listIterator = myList.listIterator(9);
         while (listIterator.hasNext()) {
           System.out.println(listIterator.next());
-      }*/
-        System.out.println(myList.subList(0,7));
-        System.out.println("List");
+      }
+        System.out.println(myList.subList(0,9));
     }
 }
