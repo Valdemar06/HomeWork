@@ -3,9 +3,16 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        MyMap mymap = new MyMap();
+        Student ivanov = new Student(2, "ivanov");
+        Student stack = new Student(5, "stack");
+        Student demo = new Student(4, "demo");
         Map map = new HashMap();
-        mymap.put("272", "one");
-        System.out.println(mymap);
+        map.put(ivanov,"Ivanov");
+        map.put(stack,"Stack");
+        map.put(demo,"Demo");
+        map.entrySet();
+        System.out.println(map);
+        map.remove(stack);
+        System.out.println(map);
     }
 }

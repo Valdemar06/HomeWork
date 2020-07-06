@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f8a5c5b-efdd-4f08-9e40-162b86251ec6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lessons12/Lessons12.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lessons7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lessons7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lessons10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lessons10/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lessons8/MyCollection$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lessons8/MyCollection$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lessons8/MyCollection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lessons8/MyCollection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lessons8/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lessons8/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lessons9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lessons9/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
