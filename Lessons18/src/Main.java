@@ -1,8 +1,10 @@
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
@@ -37,13 +39,20 @@ public class Main {
             System.out.println(timeRecordJson);
 
             /**
+             * Read to file format Json
+             */
+            String jsonInString = mapper.writeValueAsString(list);
+            //System.out.println(jsonInString);
+            double second = (double) (System.currentTimeMillis() - time);
+            String timeReadJson = "Read execution JSON: " + second + " ms";
+            System.out.println(timeReadJson);
+            /**
              * Serialized
              */
             double middle = (double) (System.currentTimeMillis() - time);
             String timeSerialized = "Record execution Serialized: " + middle + " ms";
             objectOutputStream.writeObject(list);
             System.out.println(timeSerialized);
-
 
             /**
              * Deserialize
