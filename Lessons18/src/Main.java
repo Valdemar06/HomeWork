@@ -42,8 +42,8 @@ public class Main {
              * Read format file Json
              */
             String jsonInString = mapper.writeValueAsString(list);
-            //System.out.println(jsonInString);
             double second = (double) (System.currentTimeMillis() - time);
+            System.out.println(jsonInString);
             String timeReadJson = "Read execution JSON: " + second + " ms";
             System.out.println(timeReadJson);
             /**
