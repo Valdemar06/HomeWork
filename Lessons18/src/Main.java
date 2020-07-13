@@ -39,7 +39,7 @@ public class Main {
             System.out.println(timeRecordJson);
 
             /**
-             * Read to file format Json
+             * Read format file Json
              */
             String jsonInString = mapper.writeValueAsString(list);
             //System.out.println(jsonInString);
@@ -65,9 +65,9 @@ public class Main {
             String memorySerialized = "Memory (" + usedBytes + ")  mb" + " Serialized";
             System.out.println(timeDeserialize);
             System.out.println("How much memory is the file: " + memorySerialized);
-        }catch (IOException io){
+        }catch (IOException | ClassNotFoundException io){
             io.printStackTrace();
-        }finally {
+        } finally {
             objectInputStream.close();
             objectOutputStream.close();
         }
