@@ -39,7 +39,7 @@ public class Main {
             System.out.println(timeRecordJson);
 
             /**
-             * Read to file format Json
+             * Read format file Json
              */
             String jsonInString = mapper.writeValueAsString(list);
             //System.out.println(jsonInString);
