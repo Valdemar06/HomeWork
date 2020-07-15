@@ -8,10 +8,10 @@ public class Main {
         List<Integer> delete = new ArrayList<>();
         for (int i : list) {
             if (list.indexOf(sum - i) == -1){
-                delete.add(list.indexOf(sum - i));
+                delete.add(Arrays.binarySearch(list.toArray(), sum - i));
             }else{
-                System.out.println( "["+ list.indexOf(sum - i) + ", "
-                        + list.indexOf(i) + "]");
+                System.out.println( "["+ Arrays.binarySearch(list.toArray(),(sum - i)) + ", "
+                        + Arrays.binarySearch(list.toArray(), i )+ "]");
             }
         }
     }
