@@ -5,15 +5,14 @@ public class Main {
     public static void main(String[] args) {
         int sum = 13;
         List<Integer> list = new ArrayList<>(Arrays.asList(3, 7, 10, 15));
-        Map<Integer, Integer> pairs = new HashMap<>();
+        List<Integer> delete = new ArrayList<>();
         for (int i : list) {
-            if (pairs.containsKey(i)) {
-                if (pairs.get(i) != null) { }
-                pairs.put(sum - i, null);
-            } else if (!pairs.containsValue(i)) {
-                pairs.put(sum-i, i);
+            if (list.indexOf(sum - i) == -1){
+                delete.add(list.indexOf(sum - i));
+            }else{
+                System.out.println( "["+ list.indexOf(sum - i) + ", "
+                        + list.indexOf(i) + "]");
             }
         }
-        System.out.println(pairs);
     }
 }
