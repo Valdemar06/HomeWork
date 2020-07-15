@@ -1,10 +1,8 @@
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class Main {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
@@ -43,7 +41,7 @@ public class Main {
              */
             String jsonInString = mapper.writeValueAsString(list);
             double second = (double) (System.currentTimeMillis() - time);
-            System.out.println(jsonInString);
+            //System.out.println(jsonInString);
             String timeReadJson = "Read execution JSON: " + second + " ms";
             System.out.println(timeReadJson);
             /**
@@ -61,7 +59,7 @@ public class Main {
             String timeDeserialize = "Read execution Deserialize: " + deserialize + " ms";
             List student = (List) objectInputStream.readObject();
            // System.out.println(student);
-            long usedBytes =fileOut.length()/(1024*1024);
+            long usedBytes = fileOut.length()/(1024*1024);
             String memorySerialized = "Memory (" + usedBytes + ")  mb" + " Serialized";
             System.out.println(timeDeserialize);
             System.out.println("How much memory is the file: " + memorySerialized);
