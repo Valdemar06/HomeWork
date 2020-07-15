@@ -1,24 +1,19 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
         int sum = 13;
         List<Integer> list = new ArrayList<>(Arrays.asList(3, 7, 10, 15));
-        boolean result = false;
-        for (int i = 0; i < list.size(); i++) {
-            for (int j = 0; j <list.size(); j++) {
-                if (j != i && (list.get(i)+ list.get(j)) == sum) {
-                    System.out.println(list.indexOf(list.get(i)));
-                    result = true;
-                }
+        Map<Integer, Integer> pairs = new HashMap<>();
+        for (int i : list) {
+            if (pairs.containsKey(i)) {
+                if (pairs.get(i) != null) { }
+                pairs.put(sum - i, null);
+            } else if (!pairs.containsValue(i)) {
+                pairs.put(sum-i, i);
             }
         }
-        if (result){
-        }else{
-            System.out.println("There are no matching elements in this array.");
-        }
+        System.out.println(pairs);
     }
 }
