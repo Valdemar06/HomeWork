@@ -4,7 +4,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(raisePower(BigInteger.valueOf(2),15));
+        
+        System.out.println(raisePower(BigInteger.valueOf(2),16));
     }
     private static BigInteger raisePower(BigInteger number, int power) {
         List<BigInteger> powerX = new ArrayList<>();
@@ -15,7 +16,7 @@ public class Main {
 
         int result = 2;
 
-        while (result < power - 2){
+        while (result < power ){
             xPowerN = xPowerN.multiply(xPowerN);
             powerX.add(xPowerN);
             result *= 2;
