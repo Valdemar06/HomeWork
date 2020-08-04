@@ -1,32 +1,23 @@
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
+import java.text.DecimalFormat;
 
 public class Main {
     public static void main(String[] args) {
-        
-        System.out.println(raisePower(BigInteger.valueOf(2),16));
+
+        DecimalFormat decimalFormat = new DecimalFormat();
+        decimalFormat.setDecimalSeparatorAlwaysShown(false);
+
+        float answer = raisePower(2, -2);
+        System.out.println(decimalFormat.format(answer));
     }
-    private static BigInteger raisePower(BigInteger number, int power) {
-        List<BigInteger> powerX = new ArrayList<>();
-        powerX.add(number);
+    private static float raisePower(float number, int power) {
+        float temp;
+        if( power == 0){ return 1;}
+        temp = raisePower(number, power/2);
 
-        BigInteger xPowerN = number.multiply(number);
-        powerX.add(xPowerN);
-
-        int result = 2;
-
-        while (result < power ){
-            xPowerN = xPowerN.multiply(xPowerN);
-            powerX.add(xPowerN);
-            result *= 2;
+        if (power % 2 == 0) {return temp*temp;}
+        else {
+            if(power > 0) {return number * temp * temp;}
+            else {return (temp * temp) / number;}
         }
-        BigInteger answer = BigInteger.valueOf(1);
-        for (int i = 0; i <powerX.size() ; i++) {
-            if((power &( 1 << i))!=0){
-                answer = answer.multiply(powerX.get(i));
-            }
-        }
-        return answer;
     }
 }
