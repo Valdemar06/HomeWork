@@ -18,7 +18,7 @@ public class BruteForce implements Runnable {
             /**
              * The block of code into which we insert the database
              */
-            fileReader = new FileReader("C:\\Users\\Valdemar\\IdeaProjects\\Lessons19\\words.txt");
+            fileReader = new FileReader("C:\\Users\\Valdemar\\IdeaProjects\\BruteForce\\words.txt");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
