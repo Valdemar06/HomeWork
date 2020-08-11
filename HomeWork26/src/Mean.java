@@ -1,11 +1,12 @@
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Stream;
 
 
 public class Mean {
 
 
-    public double meanMethod(List<Double> numbers) {
+    public Optional<Double> meanMethod(List<Double> numbers) {
      /*   double result = 0;
         for (double number: numbers) {
             result += number;
@@ -13,9 +14,9 @@ public class Mean {
         return result / numbers.size();*/
         Stream<Double> stream = numbers.stream();
         double  result = stream.mapToDouble(x -> x).sum();
-        return result/numbers.size();
+        return Optional.of(result/numbers.size());
     }
-    public double quadraticMethod(List<Double> numbers){
+    public Optional<Double> quadraticMethod(List<Double> numbers){
       /* double result = 0;
        double power =0;
         for (double number: numbers) {
@@ -28,8 +29,8 @@ public class Mean {
         }
         return result;*/
         Stream<Double> stream = numbers.stream();
-        return stream.filter(doubles -> doubles>0)
+        return Optional.of(stream.filter(doubles -> doubles>0)
                 .map(doubles -> doubles * doubles)
-                .filter(doubles -> doubles%2 ==0).mapToDouble(x->x).sum();
+                .filter(doubles -> doubles%2 ==0).mapToDouble(x->x).sum());
     }
 }
