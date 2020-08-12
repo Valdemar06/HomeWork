@@ -11,7 +11,8 @@ public class Main {
          */
         List<String> surname = Arrays.asList("Ivanov", "Grechkin", "Pushkin", "Petrov", "Frackov","aoesdad","aui","oia");
         List<String> collect = surname.stream().
-                filter(s -> s.toUpperCase().matches("(.*[AEYIUO].*){3,}")).collect(Collectors.toList());
+                filter(s -> s.toUpperCase().matches("(.*[AEYIUO].*){3,}"))
+                .map(name -> name.toUpperCase()).sorted().collect(Collectors.toList());
         System.out.println(collect);
     }
 }
