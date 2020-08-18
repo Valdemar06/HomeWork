@@ -3,10 +3,13 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
     <bean id="idGenerator" class="com.valdemar.service.IdGeneratorImp">
     </bean>
+
     <bean id="taskRepository" class="com.valdemar.repository.MemoryTaskRepository">
     </bean>
+
     <bean id="informationRepository" class="com.valdemar.repository.MemoryInformationRepository">
     </bean>
 
@@ -27,6 +30,14 @@
     </bean>
 
     <bean id="assignService" class="com.valdemar.service.AssignServiceImp">
+        <constructor-arg name="taskService" ref="taskService"/>
+    </bean>
+
+    <bean id="demo" class="com.valdemar.Demo" init-method="demoData">
+        <constructor-arg name="assignService" ref="assignService"/>
+        <constructor-arg name="informationToTaskService" ref="informationToTaskService"/>
+        <constructor-arg name="reportGeneration" ref="reportGeneration"/>
+        <constructor-arg name="reportView" ref="reportView"/>
         <constructor-arg name="taskService" ref="taskService"/>
     </bean>
 </beans>

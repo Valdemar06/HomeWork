@@ -29,4 +29,12 @@
     <bean id="assignService" class="com.valdemar.service.AssignServiceImp">
         <constructor-arg name="taskService" ref="taskService"/>
     </bean>
+
+    <bean id="demo" class="com.valdemar.Demo" init-method="demoData">
+        <constructor-arg name="assignService" ref="assignService"/>
+        <constructor-arg name="informationToTaskService" ref="informationToTaskService"/>
+        <constructor-arg name="reportGeneration" ref="reportGeneration"/>
+        <constructor-arg name="reportView" ref="reportView"/>
+        <constructor-arg name="taskService" ref="taskService"/>
+    </bean>
 </beans>
