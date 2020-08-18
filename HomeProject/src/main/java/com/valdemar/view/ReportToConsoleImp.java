@@ -10,7 +10,7 @@ public class ReportToConsoleImp implements  ReportView{
             System.out.println(String.format("%s\t%s\t%s",
                     reportEntry.getTaskName(),
                     reportEntry.getInfoToTask().getTextToTask().toLowerCase(),
-                    reportEntry.getDuration()));
+                    reportEntry.getDuration().toHours()));
 
         }
         System.out.println("***************************************");
