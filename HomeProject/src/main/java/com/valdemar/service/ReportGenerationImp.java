@@ -3,17 +3,19 @@ package com.valdemar.service;
 import com.valdemar.model.InfoToTask;
 import com.valdemar.model.Report;
 import com.valdemar.model.Task;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.stream.Collectors;
-
+@Service
 public class ReportGenerationImp implements ReportGeneration {
     private TaskService taskService;
     private InformationToTaskService informationToTaskService;
-
+@Autowired
     public ReportGenerationImp(TaskService taskService, InformationToTaskService informationToTaskService) {
         this.taskService = taskService;
         this.informationToTaskService = informationToTaskService;

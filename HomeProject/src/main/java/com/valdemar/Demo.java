@@ -6,17 +6,20 @@ import com.valdemar.model.Report;
 import com.valdemar.model.Task;
 import com.valdemar.service.*;
 import com.valdemar.view.ReportView;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
 import java.time.LocalDateTime;
 import java.util.List;
-
+@Service
 public class Demo {
     private AssignService assignService;
     private InformationToTaskService informationToTaskService;
     private TaskService taskService;
     private ReportGeneration reportGeneration;
     private ReportView reportView;
-
+@Autowired
     public Demo(AssignService assignService, InformationToTaskService informationToTaskService, TaskService taskService,
                 ReportGeneration reportGeneration, ReportView reportView) {
         this.assignService = assignService;
@@ -25,7 +28,7 @@ public class Demo {
         this.reportGeneration = reportGeneration;
         this.reportView = reportView;
     }
-
+@PostConstruct
     public void demoData(){
         creatTask(taskService);
         createInfo(informationToTaskService);

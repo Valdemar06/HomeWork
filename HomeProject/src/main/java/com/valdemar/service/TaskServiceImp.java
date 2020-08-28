@@ -3,15 +3,17 @@ package com.valdemar.service;
 import com.valdemar.model.InfoToTask;
 import com.valdemar.model.Task;
 import com.valdemar.repository.TaskRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
-
+@Service
 public class TaskServiceImp implements  TaskService {
     private IdGenerator idGenerator;
     private TaskRepository taskRepository;
-
+@Autowired
     public TaskServiceImp(IdGenerator idGenerator, TaskRepository taskRepository) {
         this.idGenerator = idGenerator;
         this.taskRepository = taskRepository;

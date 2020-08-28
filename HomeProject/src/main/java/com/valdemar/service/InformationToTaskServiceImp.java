@@ -3,15 +3,17 @@ package com.valdemar.service;
 import com.valdemar.model.InfoToTask;
 
 import com.valdemar.repository.InformationRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
-
+@Service
 public class InformationToTaskServiceImp implements InformationToTaskService {
     private IdGenerator idGenerator;
     private InformationRepository informationRepository;
 
-
+@Autowired
     public InformationToTaskServiceImp(IdGenerator idGenerator, InformationRepository informationRepository) {
         this.idGenerator = idGenerator;
         this.informationRepository = informationRepository;
