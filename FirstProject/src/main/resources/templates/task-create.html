@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Task</title>
+</head>
+<body>
+<form action="#" th:action = "@{/task-create}" th:object = "${task}" method="post">
+    <label for = "taskName">Task Name</label>
+    <input type="text" th:field="*{taskName}" id="taskName" placeholder="Task Name">
+    <br/>
+    <label for="taskInfo">Task Info</label>
+    <input type="text" th:field="*{taskInfo}" id="taskInfo" placeholder="Task Info">
+    <br/>
+    <label for="taskTime">Task Time</label>
+    <input type="text" th:field="*{taskTime}" id="taskTime" placeholder="Task Time">
+    <br/>
+    <input type="submit" value="Create Task">
+</form>
+</body>
+</html>
